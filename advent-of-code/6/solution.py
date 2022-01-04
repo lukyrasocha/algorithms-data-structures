@@ -18,11 +18,12 @@ class Lanternpeers:
     def __repr__(self):
         return '('+str(self.days)+','+str(self.count)+')'
 
-
 initial = list(map(int,input().split(',')))
 d = {n:0 for n in initial} 
 for i in initial:
     d[i] += 1    
+
+
 
 new = []
 for key,value in d.items():
